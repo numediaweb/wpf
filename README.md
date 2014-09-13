@@ -16,10 +16,16 @@ This theme comes preinstalled with the following frameworks/libraries;
 This theme is aimed to be used by both advanced developers (with knowledge of tools like; NodeJs, Grunt, Bower, SASS..) and also beginners on WordPress theme developpement.
 
 #### Begginers (no knowledge of NodeJs, Grunt, SASS..)
-Download the compiled zip file and start creating your theme the usual way. Further details in the "Theme structure" section bellow.
+
+Download the [release zip](https://github.com/numediaweb/wpf/releases) file, uncompress it into a your WordPress themes directory and start creating your theme the usual way. Further details in the "Theme structure" section bellow.
 
 #### Developpers
-The theme contains a ".src" folder (due to how WordPresss works, we made this sub directory to prevent spoiling the root folder with "developpement" source code), use it to add your SASS, JS, images.. Things you will be generating using Grunt tasks.
+
+Clone this repo into your theme folder : `git clone https://github.com/numediaweb/wpf.git`.
+
+The theme contains a ".src" folder, use it to add your SASS, JS, images.. Things you will be generating using Grunt tasks.
+
+> Due to how WordPresss works, we made this sub directory to prevent spoiling the root folder with "developpement" source code.
 
 ## Theme structure
 
@@ -27,7 +33,29 @@ We try to use a basic structure to get you quickly into the theme developpement:
 
 * **.src** for developpers using NodeJs and Grunt to generate their themes; see **Gruntfile.js** and **src_assets**.
 * **assets** folder contains styles, js code and images.
-* **includes** folder contains your php files that you will be including like your modules and other libraries.
+* **includes** folder contains your php files that you will be including like your modules and other libraries. 
+
+### Directory structure:
+
+```
+├── wpf/
+│   ├── .src/
+│   │   ├── src_assets/
+│   │   │   ├── images/
+│   │   │   ├── scripts/
+│   │   │   ├── scss/
+│   ├── assets/
+│   │   ├── css/
+│   │   ├── images/
+│   │   ├── scripts/
+│   ├── includes/
+│   │   ├── _setup.php
+│   ├── footer.php
+│   ├── functions.php
+│   ├── index.php
+│   ├── screenshot.png
+│   ├── style.css
+```
 
 ### Functions.php; Modular structure
 
@@ -35,11 +63,25 @@ Instead of putting our whole php code inside the typical `functions.php` we pref
 
 ### Where to edit the style?
 
+If you don't know how to use SASS then add your styles to `style.css` in the root folder. However, we recommand using SASS nand build your styles following the structure you will find in the `.src/src_assets/scss`
+
 ### Where to add my javascript?
+
+By default, we integrated a workflow based on `RequireJS` - the JavaScript file and module loader. This allows you to separate your js code into reusable modules.
+
+First, `RequireJS` is ignited in the `footer.php`. This sets `assets/scripts/main.js` as the application main file and loads the dependancies and sets `RequireJS` config.
+
+> The WordPress `wp_enqueue_script` is not compatible with requrejs [yet](https://core.trac.wordpress.org/ticket/20558).
+
+Second, add your modules inside `assets/scripts/modules/` folder.
+
+You can always call your modules by adding this attribute `data-module="example"` (where example is your module name) to your dom elements.
 
 ### What about images?
 
-# Even faster!
+If you are using the NodeJs approach, then every image you put in `.src/src_assets/images/` will be minified and `assets/images/`when runing `grunt` task.
+
+# Resources
 
 You can find ready Foundation based code blocks to get you even quicker on building your theme. Checkout this resources:
 *  [HTML Templates; Cook your site faster with some canned HTML](http://foundation.zurb.com/templates.html)

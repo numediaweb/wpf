@@ -32,6 +32,8 @@ define('WPF_TEXT_DOMAIN', 'wpf');
 define('WPF__DIR', get_template_directory().'/');
 define('WPF__DIR_URI', get_template_directory_uri().'/');
 define('WPF__INCLUDES', WPF__DIR.'includes/');
+define('WPF__HTML', WPF__INCLUDES . 'html/');
+define('WPF__ASSETS', WPF__DIR_URI.'assets/');
 
 /**
 * INCLUDES

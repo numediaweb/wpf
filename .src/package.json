@@ -1,6 +1,7 @@
 {
   "name": "wpf",
-  "version": "1.0.1",
+  "title": "WP Foundation",
+  "version": "1.0.2",
   "description": "A quick starter theme for WordPress based on Zurb's Foundation framework.",
   "repository": {
     "type": "git",
@@ -13,8 +14,11 @@
     "starter",
     "empty"
   ],
+  "tags": "foundation, responsive-layout, minimal",
   "author": "Abdessamad Idrissi",
-  "license": "MIT",
+  "license": "GNU General Public License v2 or later",
+  "licenseURI": "http://www.gnu.org/licenses/gpl-2.0.html",
+  "textDomain": "wpf",
   "bugs": {
     "url": "https://github.com/numediaweb/wpf/issues"
   },
