@@ -45,4 +45,3 @@ Instead of putting our whole php code inside the typical `functions.php` we pref
 You can find ready Foundation based code blocks to get you even quicker on building your theme. Checkout this resources:
 *  [HTML Templates; Cook your site faster with some canned HTML](http://foundation.zurb.com/templates.html)
 *  [Library; Building blocks](http://patterntap.com/code)
-
