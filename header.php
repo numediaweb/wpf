@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <body">
  *
- * @since WP Foundation 0.0.1
+ * @since WP Foundation 1.0
  */
 ?><!doctype html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->

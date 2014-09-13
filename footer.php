@@ -4,7 +4,7 @@
  *
  * Contains footer content.
  *
- * @since WP Foundation 0.0.1
+ * @since WP Foundation 1.0
  */
 ?>
 

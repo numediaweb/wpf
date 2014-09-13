@@ -2,7 +2,7 @@
 /**
  * WP Foundation setup theme; called by default from functions.php
  *
- * @since WP Foundation 0.0.1
+ * @since WP Foundation 1.0
  */
 
 if ( ! function_exists( 'wpf_after_setup_theme' ) ) :
@@ -15,7 +15,7 @@ if ( ! function_exists( 'wpf_after_setup_theme' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support post thumbnails.
  *
- * @since WP Foundation 0.0.1
+ * @since WP Foundation 1.0
  */
 function wpf_after_setup_theme() {
 
@@ -35,7 +35,7 @@ add_action( 'after_setup_theme', 'wpf_after_setup_theme' );
 /**
  * Enqueue scripts and styles for the front end.
  *
- * @since WP Foundation 0.0.1
+ * @since WP Foundation 1.0
  */
 function wpf_wp_enqueue_scripts() {
 	// Add required styles	

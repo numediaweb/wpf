@@ -20,7 +20,7 @@
 * For more information on hooks, actions, and filters,
 * @link http://codex.wordpress.org/Plugin_API
 *
-* @since WP Foundation 0.0.1
+* @since WP Foundation 1.0
 */
 
 /**

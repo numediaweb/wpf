@@ -10,7 +10,7 @@
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
- * @since WP Foundation 0.0.1
+ * @since WP Foundation 1.0
  */
 
 get_header();

@@ -28,7 +28,6 @@ We try to use a basic structure to get you quickly into the theme developpement:
 * **.src** for developpers using NodeJs and Grunt to generate their themes; see **Gruntfile.js** and **src_assets**.
 * **assets** folder contains styles, js code and images.
 * **includes** folder contains your php files that you will be including like your modules and other libraries.
-* **languages** folder contains translation strings for your theme.
 
 ### Functions.php; Modular structure
 
