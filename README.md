@@ -17,7 +17,7 @@ This theme is aimed to be used by both advanced developers (with knowledge of to
 
 #### Begginers (no knowledge of NodeJs, Grunt, SASS..)
 
-Download the [release zip](https://github.com/numediaweb/wpf/releases) file, uncompress it into a your WordPress themes directory and start creating your theme the usual way. Further details in the "Theme structure" section bellow.
+Download the [release zip](https://github.com/numediaweb/wpf/releases) file, uncompress it into a your WordPress themes directory and start creating your theme the usual way. Further details in the [Theme structure](https://github.com/numediaweb/wpf#theme-structure) section bellow.
 
 #### Developpers
 
