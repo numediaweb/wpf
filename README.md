@@ -13,7 +13,7 @@ This theme comes preinstalled with the following frameworks/libraries;
 
 ## For begginer and advanced developpers
 
-This theme is aimed to be used by both advanced developers (with knowledge of tools like; NodeJs, Grunt, Bower, SASS..) and also beginners on WordPress theme developpement.
+This theme is aimed to be used by both advanced developers and also beginners on WordPress theme developpement.
 
 #### Begginers (no knowledge of NodeJs, Grunt, SASS..)
 
@@ -21,7 +21,7 @@ Download the [release zip](https://github.com/numediaweb/wpf/releases) file, unc
 
 #### Developpers
 
-Clone this repo into your theme folder : `git clone https://github.com/numediaweb/wpf.git`.
+If you are familiar with tools like; [NodeJs](http://nodejs.org/), [GruntJS](http://gruntjs.com/), [Bower](http://bower.io/), [SASS](http://sass-lang.com/), [Compass](http://compass-style.org/).. Clone this repo into your theme folder : `git clone https://github.com/numediaweb/wpf.git`.
 
 The theme contains a ".src" folder, use it to add your SASS, JS, images.. Things you will be generating using Grunt tasks.
 
