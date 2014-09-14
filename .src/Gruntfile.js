@@ -21,8 +21,8 @@ module.exports = function(grunt) {
                     ],
                     dest: '<%= destFolder %>/assets/scripts/'
                 }, {
-                    expand: true, //Enable options below
-                    cwd: '<%= srcAssets %>', // base directory in the source path
+                    expand: true,
+                    cwd: '<%= srcAssets %>',
                     src: ['scripts/**/*.*'],
                     dest: '<%= destFolder %>/assets/'
                 }]
@@ -69,11 +69,7 @@ module.exports = function(grunt) {
 		compress: {
 			main: {
 				options: {
-					// archive: function(pkg) {
-					// 	console.log(pkg);
-					// 	return '../../wpf.'+pkg.version+'.zip';
-					// } // destination; parent folder
-					archive: '../../wpf.<%= pkg.version %>.zip'
+					archive: '../../<%= pkg.name %>.<%= pkg.version %>.zip'
 				},
 				files: [{
 					expand: true,

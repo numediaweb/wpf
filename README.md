@@ -17,11 +17,17 @@ This theme is aimed to be used by both advanced developers and also beginners on
 
 #### Begginers (no knowledge of NodeJs, Grunt, SASS..)
 
-Download the [release zip](https://github.com/numediaweb/wpf/releases) file, uncompress it into a your WordPress themes directory and start creating your theme the usual way. Further details in the [Theme structure](https://github.com/numediaweb/wpf#theme-structure) section bellow.
+Download the [release zip](https://github.com/numediaweb/wpf/releases/latest) file, uncompress it into a your WordPress themes directory and start creating your theme the usual way. Further details in the [Theme structure](https://github.com/numediaweb/wpf#theme-structure) section bellow.
 
 #### Developpers
 
-If you are familiar with tools like; [NodeJs](http://nodejs.org/), [GruntJS](http://gruntjs.com/), [Bower](http://bower.io/), [SASS](http://sass-lang.com/), [Compass](http://compass-style.org/).. Clone this repo into your theme folder : `git clone https://github.com/numediaweb/wpf.git`.
+If you are familiar with tools like; [NodeJs](http://nodejs.org/), [GruntJS](http://gruntjs.com/), [Bower](http://bower.io/), [SASS](http://sass-lang.com/), [Compass](http://compass-style.org/);
+  * Clone this repo into your theme folder : `git clone https://github.com/numediaweb/wpf.git my_theme`.
+  * Navigate to .src sub-folder; `cd my_theme/.src`
+  * Open the `package.json` file and edit the name, version etc.. Do the same for `bower.json`
+  * Now it is time to install nodejs packages; `npm install`
+  * Install vendor scripts; `bower install`
+  * Test everything with; `grunt`
 
 The theme contains a ".src" folder, use it to add your SASS, JS, images.. Things you will be generating using Grunt tasks.
 
