@@ -71,7 +71,7 @@ Instead of putting our whole php code inside the typical `functions.php` we pref
 
 ### Where to edit the style?
 
-If you don't know how to use SASS then add your styles to `style.css` in the root folder. However, we recommand using SASS nand build your styles following the structure you will find in the `.src/src_assets/scss`
+If you don't know how to use SASS then add your styles to `style.css` in the root folder. However, we recommand using SASS and build your styles following the structure you will find in the `.src/src_assets/scss`
 
 ### Where to add my javascript?
 
