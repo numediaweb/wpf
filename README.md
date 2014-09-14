@@ -75,11 +75,11 @@ If you don't know how to use SASS then add your styles to `style.css` in the roo
 
 ### Where to add my javascript?
 
-By default, we integrated a workflow based on `RequireJS` - the JavaScript file and module loader. This allows you to separate your js code into reusable modules.
+By default, we integrated a workflow based on RequireJS - the JavaScript file and module loader. This allows you to separate your js code into reusable modules.
 
 First, `RequireJS` is ignited in the `footer.php`. This sets `assets/scripts/main.js` as the application main file and loads the dependancies and sets `RequireJS` config.
 
-> The WordPress `wp_enqueue_script` is not compatible with requrejs [yet](https://core.trac.wordpress.org/ticket/20558).
+> The WordPress `wp_enqueue_script` is not compatible with RequireJS [yet](https://core.trac.wordpress.org/ticket/20558).
 
 Second, add your modules inside `assets/scripts/modules/` folder.
 
