@@ -69,9 +69,11 @@ module.exports = function(grunt) {
 		compress: {
 			main: {
 				options: {
-					archive: function() {
-						return '../../wpf.1.1.zip';
-					} // destination; parent folder
+					// archive: function(pkg) {
+					// 	console.log(pkg);
+					// 	return '../../wpf.'+pkg.version+'.zip';
+					// } // destination; parent folder
+					archive: '../../wpf.<%= pkg.version %>.zip'
 				},
 				files: [{
 					expand: true,
