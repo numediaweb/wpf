@@ -21,15 +21,15 @@ Download the [release zip](https://github.com/numediaweb/wpf/releases/latest) fi
 
 #### Developpers
 
-If you are familiar with tools like; [NodeJs](http://nodejs.org/), [GruntJS](http://gruntjs.com/), [Bower](http://bower.io/), [SASS](http://sass-lang.com/), [Compass](http://compass-style.org/);
-  * Clone this repo into your theme folder : `git clone https://github.com/numediaweb/wpf.git my_theme`.
-  * Navigate to .src sub-folder; `cd my_theme/.src`
+If you are familiar with tools like; [NodeJs](http://nodejs.org/), [GruntJS](http://gruntjs.com/), [Bower](http://bower.io/), [SASS](http://sass-lang.com/), [Compass](http://compass-style.org/).. The theme contains a **.src** folder, use it to add your SASS, JS, images.. Things you will be generating using Grunt tasks.;
+  * Clone this repo into your theme folder; `git clone https://github.com/numediaweb/wpf.git my_theme`.
+  * Navigate to **.src** sub-folder; `cd my_theme/.src`
   * Open the `package.json` file and edit the name, version etc.. Do the same for `bower.json`
   * Now it is time to install nodejs packages; `npm install`
   * Install vendor scripts; `bower install`
   * Test everything with; `grunt`
 
-The theme contains a ".src" folder, use it to add your SASS, JS, images.. Things you will be generating using Grunt tasks.
+
 
 > Due to how WordPresss works, we made this sub directory to prevent spoiling the root folder with "developpement" source code.
 
@@ -46,6 +46,8 @@ We try to use a basic structure to get you quickly into the theme developpement:
 ```
 ├── wpf/
 │   ├── .src/
+│   │   ├── bower_components/
+│   │   ├── node_modules/
 │   │   ├── src_assets/
 │   │   │   ├── images/
 │   │   │   ├── scripts/
