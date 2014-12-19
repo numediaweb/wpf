@@ -6,7 +6,8 @@ relative_assets = false      		#Indicates whether the compass helper functions s
 css_dir = "../assets/css"     		#where the CSS will saved
 sass_dir = "src_assets/scss" 		#where our .scss files are
 images_dir = "src_assets/images" 	#the folder with your images
-http_images_path = "assets/images" 	#The full http path to images on the web server. Defaults to http_path + "/" + images_dir
+http_images_path = "../images" 		#The full http path to images on the web server. Defaults to http_path + "/" + images_dir
+http_fonts_path = "../fonts" 		#The full http path to images on the web server. Defaults to http_path + "/" + images_dir
 
 # You can select your preferred output style here (can be overridden via the command line):
 output_style = :compressed 			# After dev :compressed

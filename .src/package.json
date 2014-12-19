@@ -1,28 +1,12 @@
 {
   "name": "wpf",
   "title": "WP Foundation",
-  "version": "1.0.2",
-  "description": "A quick starter theme for WordPress based on Zurb's Foundation framework.",
+  "version": "1.1.0",
+  "description": "A quick starter theme for WordPress based on Zurb's Foundation 5 framework.",
   "repository": {
     "type": "git",
     "url": "https://github.com/numediaweb/wpf.git"
   },
-  "keywords": [
-    "wordpress",
-    "foundation",
-    "theme",
-    "starter",
-    "empty"
-  ],
-  "tags": "foundation, responsive-layout, minimal",
-  "author": "Abdessamad Idrissi",
-  "license": "GNU General Public License v2 or later",
-  "licenseURI": "http://www.gnu.org/licenses/gpl-2.0.html",
-  "textDomain": "wpf",
-  "bugs": {
-    "url": "https://github.com/numediaweb/wpf/issues"
-  },
-  "homepage": "https://github.com/numediaweb/wpf",
   "dependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-compass": "~0.9.0",
@@ -31,6 +15,7 @@
     "grunt-contrib-uglify": "~0.5.1",
     "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-imagemin": "~0.8.1",
-    "grunt-contrib-compress": "~0.11.0"
+    "grunt-contrib-compress": "~0.11.0",
+    "grunt-contrib-cssmin": "~0.10.0"
   }
 }

@@ -1,0 +1,14 @@
+*** WP Foundation Changelog ***
+
+2014.09.12 - version 1.1.0
+ * Add 		- Languages support.
+ * Remove 	- RequireJS and modules.
+
+2014.09.14 - version 1.0.2
+ * Fix 		- Minor bug fixes
+
+2014.09.13 - version 1.0.1
+ * Fix 		- Minor bug fixes
+
+2014.09.12 - version 1.0.0
+ * Initial release

@@ -65,25 +65,20 @@ We try to use a basic structure to get you quickly into the theme developpement:
 │   ├── style.css
 ```
 
-### Functions.php; Modular structure
+### Functions.php
 
-Instead of putting our whole php code inside the typical `functions.php` we prefer to separate the functions into blocks. That is, we’ll define our module structure based upon function. For instance, in our theme we’ll include a `_setup.php` module and we invoke it from `functions.php`.
+Instead of putting our whole php code inside the typical `functions.php` we prefer to use a class containing our functions; wpf_classes.php
 
 ### Where to edit the style?
 
 If you don't know how to use SASS then add your styles to `style.css` in the root folder. However, we recommand using SASS and build your styles following the structure you will find in the `.src/src_assets/scss`
 
-### Where to add my javascript?
+### Where to edit my javascript?
 
-By default, we integrated a workflow based on [RequireJS](http://requirejs.org/) - the JavaScript file and module loader. This allows you to separate your js code into reusable modules.
-
-First, `RequireJS` is ignited in the `footer.php`. This sets `assets/scripts/main.js` as the application main file and loads the dependancies and sets `RequireJS` config.
+The main js file is `.src/src_assets/scripts/app.js`, give it a check; it is self explanatory :)
+We dropped support for `requirejs` as this arised many compatiblity issues with wordpress univers of plugins!
 
 > The WordPress `wp_enqueue_script` is not compatible with RequireJS [yet](https://core.trac.wordpress.org/ticket/20558).
-
-Second, add your modules inside `assets/scripts/modules/` folder.
-
-You can always call your modules by adding this attribute `data-module="example"` (where example is your module name) to your dom elements.
 
 ### What about images?
 

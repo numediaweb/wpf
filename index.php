@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The main template file
  *
@@ -10,7 +9,7 @@
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
- * @since WP Foundation 1.0
+ * @since WP Foundation 1.1.0
  */
 
 get_header();
@@ -22,10 +21,8 @@ get_header();
  * SOME AWESOME BUILDING CODE BLOCKS HERE TOO:
  * http://patterntap.com/code
  */
-?>
-     
- <?php require_once WPF__HTML . 'homepage.html'; ?>
 
-    
-<?php
+include WPF__HTML . 'home.html'; 
+
+
 get_footer();

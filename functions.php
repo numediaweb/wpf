@@ -23,19 +23,33 @@
 * @since WP Foundation 1.0
 */
 
-/**
-* DEFINITIONS
-*/
+// Make sure we don't expose any info if called directly
+if (!function_exists('add_action')) {
+    _e('Hi there!  I&#39;m just a functions file, not much I can do when called directly.', 'wpf');
+    exit;
+}
 
-define('WPF_VERSION', '0.0.1');
+/**
+* Global vars
+*/
+define('WPF_THEME_VERSION', '1.1.0');
 define('WPF_TEXT_DOMAIN', 'wpf');
 define('WPF__DIR', get_template_directory().'/');
 define('WPF__DIR_URI', get_template_directory_uri().'/');
-define('WPF__INCLUDES', WPF__DIR.'includes/');
-define('WPF__HTML', WPF__INCLUDES . 'html/');
+define('WPF__HTML', WPF__DIR.'html/');
 define('WPF__ASSETS', WPF__DIR_URI.'assets/');
 
-/**
-* INCLUDES
-*/
-require WPF__INCLUDES . '/_setup.php';
+// Necessary files
+require_once WPF__DIR . 'wpf_classes.php';
+
+// Init The plugin in admin or in frontend
+add_action('init', array(
+    'WPF',
+    'init'
+));
+
+// Enque necessary files
+add_action('wp_enqueue_scripts', array(
+    'WPF',
+    'wp_enqueue_scripts'
+));
