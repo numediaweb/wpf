@@ -25,9 +25,9 @@ If you are familiar with tools like; [NodeJs](http://nodejs.org/), [GruntJS](htt
   * Clone this repo into your theme folder; `git clone https://github.com/numediaweb/wpf.git my_theme`.
   * Navigate to **.src** sub-folder; `cd my_theme/.src`
   * Open the `package.json` file and edit the name, version etc.. Do the same for `bower.json`
-  * Now it is time to install nodejs packages; `npm install`
-  * Install vendor scripts; `bower install`
-  * Test everything with; `grunt`
+  * Now it is time to install required `node_modules` with; `npm install`
+  * Install required `bower_components` with; `bower install`
+  * Once done, test everything with; `grunt`
 
 
 
@@ -56,8 +56,8 @@ We try to use a basic structure to get you quickly into the theme developpement:
 │   │   ├── css/
 │   │   ├── images/
 │   │   ├── scripts/
-│   ├── includes/
-│   │   ├── _setup.php
+│   ├── html/
+│   │   ├── home.html
 │   ├── footer.php
 │   ├── functions.php
 │   ├── index.php
