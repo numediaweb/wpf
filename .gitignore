@@ -3,6 +3,10 @@
 .src/bower_components
 .src/.sass-cache
 
+# files to ignore
+changelog.txt
+README.md
+
 # Numerous always-ignore extensions
 *.diff
 *.err
