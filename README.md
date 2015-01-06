@@ -22,7 +22,7 @@ Download the [release zip](https://github.com/numediaweb/wpf/releases/latest) fi
 #### Developpers
 
 If you are familiar with tools like; [NodeJs](http://nodejs.org/), [GruntJS](http://gruntjs.com/), [Bower](http://bower.io/), [SASS](http://sass-lang.com/), [Compass](http://compass-style.org/).. The theme contains a **.src** folder, use it to add your SASS, JS, images.. Things you will be generating using Grunt tasks.;
-  * Clone this repo into your theme folder; `git clone --depth 1 https://github.com/numediaweb/wpf.git my_theme`.
+  * Clone this repo into your theme folder; `git clone https://github.com/numediaweb/wpf.git my_theme`.
   * You may want to change the remote's URL using something like; `git remote set-url origin https://github.com/USERNAME/REPOSITORY_2.git`.
   * Navigate to **.src** sub-folder; `cd my_theme/.src`
   * Open the `package.json` file and edit the name, version etc.. Do the same for `bower.json`
