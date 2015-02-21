@@ -21,7 +21,7 @@ class WPF {
 	 * Load language files
 	 */
 	public static function theme_textdomain() {
-		load_theme_textdomain('reef', false, dirname(plugin_basename(__FILE__)) . '/languages/');
+		load_theme_textdomain('wpf', get_template_directory() . '/languages');
 	}
 	
 	/**
@@ -38,6 +38,8 @@ class WPF {
 	public static function wp_enqueue_scripts() {
 		
 		// Add required styles
+		wp_register_style('wpf_style', get_stylesheet_uri(), array());
+		wp_enqueue_style('wpf_style');
 		wp_register_style('wpf_app', WPF__ASSETS . 'css/app.css', array());
 		wp_enqueue_style('wpf_app');
 		

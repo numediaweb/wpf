@@ -61,7 +61,8 @@ module.exports = function(grunt) {
 			app: {
 				options: {
 					sourceMap: true,
-					preserveComments: 'some',
+        			beautify: false,
+					preserveComments: false,
 					mangle: true // reduce names of local variables to (usually) single-letters.
 				},
 				files: {
